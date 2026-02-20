@@ -7,8 +7,6 @@
   },
   "deploy": {
     "numReplicas": 1,
-    "restartPolicyType": "on-failure",
-    "restartPolicyMaxRetries": 10,
     "command": "cd subtrack-backend && npm start"
   }
 }
