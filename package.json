@@ -1,0 +1,34 @@
+{
+  "name": "subtrack",
+  "version": "1.0.0",
+  "description": "SubTrack - Subscription Management System with integrated frontend and backend",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd subtrack-frontend && npm install && cd ../subtrack-backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd subtrack-frontend && npm run dev",
+    "dev:backend": "cd subtrack-backend && npm run dev",
+    "build": "cd subtrack-frontend && npm run build && cd ../subtrack-backend && npm run build",
+    "build:frontend": "cd subtrack-frontend && npm run build",
+    "build:backend": "cd subtrack-backend && npm run build",
+    "start": "cd subtrack-backend && npm start",
+    "lint": "cd subtrack-frontend && npm run lint && cd ../subtrack-backend && npm run lint",
+    "typecheck": "cd subtrack-frontend && npm run typecheck && cd ../subtrack-backend && npm run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "subscription",
+    "management",
+    "saas",
+    "react",
+    "express",
+    "typescript"
+  ],
+  "author": "SubTrack Team",
+  "license": "MIT"
+}
